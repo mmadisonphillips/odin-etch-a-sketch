@@ -1,0 +1,74 @@
+body {
+  min-height: 100vh;
+  background-color: #C9D6EA;
+  font-family: 'roboto', sans-serif;
+  color: #3C362A;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.resetButton {
+  background-color: #B8C4BB;
+  color: #FCFDFF;
+  padding: 4px 8px;
+  border: 2px solid #FCFDFF;
+  border-radius: 4px;
+  transition-duration: 500ms;
+  transition-property: background-color;
+}
+
+.resetButton:hover {
+  cursor: pointer;
+  background-color: rgb(26, 176, 230);
+}
+
+.mainContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: stretch;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid #C9D6EA;
+}
+
+.fade {
+  width: 100%;
+  height: 100%;
+}
+
+.activated {
+  background-color: #3C362A;
+  animation-name: changeColor;
+  animation-duration: 10s;
+}
+
+.gridContainer{
+  width: 100%;
+  max-height: 80vh;
+  aspect-ratio: 1;
+  display: grid;
+  margin: 32px;
+}
+
+@keyframes changeColor  {
+  from {
+    background-color: inherit;
+  }
+  to {
+    background-color: #3C362A;
+  }
+}
